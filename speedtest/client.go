@@ -1,6 +1,7 @@
 package speedtest
 
 import (
+	"crypto/tls"
 	"encoding/xml"
 	"fmt"
 	"io"
@@ -54,6 +55,7 @@ func NewClient(opts *Opts) Client {
 		Dial:                  dialer.Dial,
 		TLSHandshakeTimeout:   opts.Timeout,
 		ExpectContinueTimeout: opts.Timeout,
+		TLSClientConfig:       &tls.Config{InsecureSkipVerify: opts.Insecure},
 	}
 
 	client := &client{
