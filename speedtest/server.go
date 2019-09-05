@@ -138,10 +138,10 @@ func (servers *Servers) deduplicate() {
 }
 
 var serverURLs = [...]string{
-	"://www.speedtest.net/speedtest-servers-static.php",
-	"://c.speedtest.net/speedtest-servers-static.php",
-	"://www.speedtest.net/speedtest-servers.php",
-	"://c.speedtest.net/speedtest-servers.php",
+	"https://www.speedtest.net/speedtest-servers-static.php",
+	"https://c.speedtest.net/speedtest-servers-static.php",
+	"https://www.speedtest.net/speedtest-servers.php",
+	"https://c.speedtest.net/speedtest-servers.php",
 }
 
 var NoServersError error = errors.New("No servers available")

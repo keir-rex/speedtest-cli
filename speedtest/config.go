@@ -69,7 +69,7 @@ func (client *client) loadConfig() {
 
 	result := ConfigRef{}
 
-	resp, err := client.Get("://www.speedtest.net/speedtest-config.php")
+	resp, err := client.Get("https://www.speedtest.net/speedtest-config.php")
 	if err != nil {
 		result.Error = err
 	} else {

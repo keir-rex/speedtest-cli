@@ -9,7 +9,6 @@ import (
 	"net"
 	"net/http"
 	"runtime"
-	"strings"
 	"sync"
 )
 
@@ -69,13 +68,6 @@ func NewClient(opts *Opts) Client {
 }
 
 func (client *client) NewRequest(method string, url string, body io.Reader) (*http.Request, error) {
-	if strings.HasPrefix(url, ":") {
-		if client.opts.Secure {
-			url = "https" + url
-		} else {
-			url = "http" + url
-		}
-	}
 	req, err := http.NewRequest(method, url, body)
 	if err == nil {
 		req.Header.Set(
