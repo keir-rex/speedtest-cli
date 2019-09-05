@@ -36,14 +36,14 @@ The following command line options are available:
   -h    Shorthand for -help option
   -help
         Show usage information and exit
+  -insecure
+    	Allow connections to Speedtest.net sites over HTTPS without validating certs. Useful in devices without CA bundles installed.
   -interface string
         IP address of network interface to bind to
   -list
         Display a list of speedtest.net servers sorted by distance
   -quiet
         Suppress verbose output, only show basic information
-  -secure
-        Use HTTPS instead of HTTP when communicating with speedtest.net operated servers
   -server uint
         Specify a server ID to test against
   -timeout duration
