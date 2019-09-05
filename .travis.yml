@@ -34,16 +34,20 @@ script:
   - go build -o ${BINARY} -ldflags "$LDFLAGS" speedtest.go
 
 before_deploy:
-  - if [[ -z $TRAVIS_TAG ]]; then export TRAVIS_TAG="untagged-${TRAVIS_COMMIT}"; fi
+  - if [[ -z $TRAVIS_TAG ]]; then export TRAVIS_TAG="dev-release"; fi
 
 deploy:
   - provider: releases
     api_key: "${GITHUB_TOKEN}"
     file: "${BINARY}"
     skip_cleanup: true
-    # draft: true
-    # on:
-    #   tags: false
-    #   branch: master
     on:
       tags: true
+  - provider: releases
+    api_key: "${GITHUB_TOKEN}"
+    file: "${BINARY}"
+    skip_cleanup: true
+    draft: true
+    on:
+      tags: false
+      branch: dev
