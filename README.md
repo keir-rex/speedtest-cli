@@ -1,7 +1,7 @@
 speedtest.net CLI
 =================
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/fopina/speedtest-cli)](https://goreportcard.com/report/github.com/fopina/speedtest-cli)
+[![Build Status](https://travis-ci.org/fopina/speedtest-cli.svg?branch=master)](https://travis-ci.org/fopina/speedtest-cli) [![Go Report Card](https://goreportcard.com/badge/github.com/fopina/speedtest-cli)](https://goreportcard.com/report/github.com/fopina/speedtest-cli)
 
 This is a simple command line client to speedtest.net written in Go.
 
@@ -12,8 +12,8 @@ Installation
 
 Run te following commands in console
 ```
-go get github.com/surol/speedtest-cli
-go install github.com/surol/speedtest-cli
+go get github.com/fopina/speedtest-cli
+go install github.com/fopina/speedtest-cli
 ```
 
 Usage

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/surol/speedtest-cli/speedtest"
+	"github.com/fopina/speedtest-cli/speedtest"
 	"fmt"
 	"os"
 	"flag"
