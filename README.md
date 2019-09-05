@@ -1,6 +1,8 @@
 speedtest.net CLI
 =================
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/fopina/speedtest-cli)](https://goreportcard.com/report/github.com/fopina/speedtest-cli)
+
 This is a simple command line client to speedtest.net written in Go.
 
 It is a direct port from https://github.com/sivel/speedtest-cli written in Python. It lacks some of the features though, e.g. `-mini` and `-share` options are not supported.
