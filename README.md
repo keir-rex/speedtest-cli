@@ -10,7 +10,15 @@ It is a direct port from https://github.com/sivel/speedtest-cli written in Pytho
 Installation
 ------------
 
-Run te following commands in console
+Dowload a pre-built binary from [releases](https://github.com/fopina/speedtest-cli/releases) such as:
+
+```
+curl -L https://github.com/fopina/speedtest-cli/releases/download/v1.0.0/speedtest-cli_linux_amd64 -o /usr/local/bin/speedtest-cli
+chmod a+x /usr/local/bin/speedtest-cli
+```
+
+Or build from latest source
+
 ```
 go get github.com/fopina/speedtest-cli
 go install github.com/fopina/speedtest-cli
