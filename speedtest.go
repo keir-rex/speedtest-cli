@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/fopina/speedtest-cli/speedtest"
+	"github.com/keir-rex/speedtest-cli/speedtest"
 )
 
 func version() {

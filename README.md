@@ -1,7 +1,7 @@
 speedtest.net CLI
 =================
 
-[![Build Status](https://travis-ci.org/fopina/speedtest-cli.svg?branch=master)](https://travis-ci.org/fopina/speedtest-cli) [![Go Report Card](https://goreportcard.com/badge/github.com/fopina/speedtest-cli)](https://goreportcard.com/report/github.com/fopina/speedtest-cli)
+[![Build Status](https://travis-ci.org/keir-rex/speedtest-cli.svg?branch=master)](https://travis-ci.org/keir-rex/speedtest-cli) [![Go Report Card](https://goreportcard.com/badge/github.com/keir-rex/speedtest-cli)](https://goreportcard.com/report/github.com/keir-rex/speedtest-cli)
 
 This is a simple command line client to speedtest.net written in Go.
 
@@ -10,18 +10,18 @@ It is a direct port from https://github.com/sivel/speedtest-cli written in Pytho
 Installation
 ------------
 
-Dowload a pre-built binary from [releases](https://github.com/fopina/speedtest-cli/releases) such as:
+Dowload a pre-built binary from [releases](https://github.com/keir-rex/speedtest-cli/releases) such as:
 
 ```
-curl -L https://github.com/fopina/speedtest-cli/releases/download/v1.0.0/speedtest-cli_linux_amd64 -o /usr/local/bin/speedtest-cli
+curl -L https://github.com/keir-rex/speedtest-cli/releases/download/v1.0.0/speedtest-cli_linux_amd64 -o /usr/local/bin/speedtest-cli
 chmod a+x /usr/local/bin/speedtest-cli
 ```
 
 Or build from latest source
 
 ```
-go get github.com/fopina/speedtest-cli
-go install github.com/fopina/speedtest-cli
+go get github.com/keir-rex/speedtest-cli
+go install github.com/keir-rex/speedtest-cli
 ```
 
 Usage

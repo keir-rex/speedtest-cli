@@ -1,3 +1,3 @@
-module github.com/fopina/speedtest-cli
+module github.com/keir-rex/speedtest-cli
 
 go 1.12
